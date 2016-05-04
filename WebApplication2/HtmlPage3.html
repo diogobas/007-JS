@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        var p = {};
+
+        p.codigo = 1;
+        p.nome = "adão";
+        p.sexo = "M";
+
+        document.writeln("<pre>");
+        document.writeln(p.codigo);
+        document.writeln(p.nome);
+        document.writeln(p.sexo);
+        document.writeln(JSON.stringify(p));
+        document.writeln(p.toString());
+
+        p.acordar = function () {
+            document.writeln("*** " + this.nome + " acordou ***");
+        }
+
+        p.acordar();
+        document.writeln("</pre>");
+    </script>
+</head>
+<body>
+</body>
+</html>
